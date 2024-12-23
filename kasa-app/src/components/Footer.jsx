@@ -2,7 +2,7 @@
 function Footer() {
     return (
       <footer>
-        <p>© 2024 Kasa. Tous droits réservés.</p>
+        <p>© 2020 Kasa. All rights reserved.</p>
       </footer>
     );
   }

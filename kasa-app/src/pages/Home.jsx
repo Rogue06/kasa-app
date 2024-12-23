@@ -1,12 +1,11 @@
 // src/pages/Home.jsx
 function Home() {
     return (
-      <div>
-        <h1>Accueil</h1>
-        <p>Bienvenue sur la page d’accueil !</p>
+      <div className="home-container">
+        <h1>Bienvenue sur la page d’accueil !</h1>
+        <p>Ceci est la page Home.</p>
       </div>
     );
   }
   
   export default Home;
-  
