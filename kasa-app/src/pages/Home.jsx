@@ -1,9 +1,25 @@
 // src/pages/Home.jsx
+import data from '/data/annonces.json'
+import Card from '../components/Card'
+
 function Home() {
     return (
       <div className="home-container">
-        <h1>Bienvenue sur la page d’accueil !</h1>
-        <p>Ceci est la page Home.</p>
+        <div className="banner">
+        <h1>Chez vous, partout et ailleurs</h1>
+        </div>
+
+        <div className="cards-container">
+           
+            {data.map((logemement)=> (
+                <Card
+                 key={logemement.id} 
+                 id={logemement.id} 
+                 title={logemement.title} 
+                 cover={logemement.cover} 
+                 /> 
+            ))}
+        </div>
       </div>
     );
   }
