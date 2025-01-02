@@ -4,15 +4,17 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function Layout() {
-  return (
-    <div className="layout-container">
-      <Header />
-      <main>
-        <Outlet /> {/* C'est ici que les pages enfants seront rendues */}
-      </main>
-      <Footer />
-    </div>
-  );
-}
+    return (
+      <>
+        <div className="layout-container">
+          <Header />           {/* Le même header sur toutes les pages */}
+          <main>
+            <Outlet />        {/* C'est ici que le contenu unique de chaque page sera injecté */}
+          </main>
+        </div>
+        <Footer />           {/* Le même footer sur toutes les pages */}
+      </>
+    );
+  }
 
 export default Layout;
