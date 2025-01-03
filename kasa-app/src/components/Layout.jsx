@@ -5,16 +5,16 @@ import Footer from "./Footer";
 
 function Layout() {
     return (
-      <>
-        <div className="layout-container">
-          <Header />           {/* Le même header sur toutes les pages */}
-          <main>
-            <Outlet />        {/* C'est ici que le contenu unique de chaque page sera injecté */}
-          </main>
+        <div className="site-wrapper">
+            <div className="layout-container">
+                <Header />
+                <main>
+                    <Outlet />
+                </main>
+            </div>
+            <Footer />
         </div>
-        <Footer />           {/* Le même footer sur toutes les pages */}
-      </>
     );
-  }
+}
 
 export default Layout;
