@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import '../styles/Collapse.scss';
 
 function Collapse({ title, content }) {
@@ -24,5 +25,13 @@ function Collapse({ title, content }) {
         </div>
     );
 }
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.element
+    ]).isRequired
+};
 
 export default Collapse; 
