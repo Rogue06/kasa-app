@@ -12,7 +12,7 @@ Kasa est une application web de location immobilière développée avec React. L
 ## Installation
 
 1. Clonez le repository
-   bash
+   ```bash```
    `git clone https://github.com/Rogue06/kasa-app.git`
 
 2. Accédez au répertoire du projet

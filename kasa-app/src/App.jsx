@@ -1,13 +1,9 @@
 // App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-// Pages « d’exemple » ou « réelles » selon ce que tu veux afficher
 import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import FicheLogement from './pages/FicheLogement'
-
-// (Optionnel) Layout global si tu en as déjà un
 import Layout from './components/Layout'
 
 function App() {
